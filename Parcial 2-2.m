@@ -3,7 +3,7 @@ close all;
 clc;
 
 %Imagem original
-img=imread('danielfilho.jpg'); %Imagem a ser processada/Imagem original
+img=imread('joao_guilherme.jpg'); %Imagem a ser processada/Imagem original
 
 i=figure;subplot(1, 3, 1);
 imshow(img); %Mostra a imagem original
