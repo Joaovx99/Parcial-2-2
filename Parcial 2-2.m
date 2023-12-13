@@ -1,9 +1,11 @@
+%limpeza de ambiente
+
 clear;
 close all;
 clc;
 
 %Imagem original
-img=imread('joao_guilherme.jpg'); %Imagem a ser processada/Imagem original
+img=imread('joao_guilherme.JPG'); %Imagem a ser processada/Imagem original
 
 i=figure;subplot(1, 3, 1);
 imshow(img); %Mostra a imagem original
@@ -13,7 +15,7 @@ title('Imagem Original');
 
 %imagem fourier
 fourier = fft2(img); % Aplica a transformada de fourier á imagem original
-b=fourier(10:50,10:50) % Mostra as as linhas de 10 a 50 e das colunas de 10 a 50 da imagem tranformada com fourier
+b=fourier(10:50,10:50) % Mostra as as linhas de 10 a 50 e das colunas de 10 a 50 da imagem transformada com fourier
 i=subplot(1, 3, 2);
 imshow(fourier); % Mostra a imagem transformada
 title('Imagem com Fourier');
